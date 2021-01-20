@@ -1,4 +1,4 @@
-# Script python3 para listar VMs utilizando API do vCenter
+# Script python3 para listar e Delisgar VMs utilizando API do vCenter
 
 * Para utilizar
     - Defina as variáveis de abiente com suas credenciais de acesso ao vcenter.
@@ -12,7 +12,11 @@
     ```sh
     pip install requirements.txt
     ```
-    - Execute o script
+    - Execute o script para listar as VMs
     ```sh
     python3 list_vms.py
+    ```
+    - Execute o script para Desligar a VM. "OBS: Deve-se alterar a variável "vmid" para qual VM vai ser desligada, o vmid pode ser obtito no script que lista as VMs"
+     ```sh
+    python3 poweroff_vm.py
     ```
