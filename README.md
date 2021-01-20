@@ -16,7 +16,7 @@
     ```sh
     python3 list_vms.py
     ```
-    - Execute o script para Desligar a VM. "OBS: Deve-se alterar a variável "vmid" para qual VM vai ser desligada, o vmid pode ser obtito no script que lista as VMs"
+    - Execute o script para Desligar ou Ligar a VM. "OBS: Deve-se alterar a variável "vmid" para qual VM vai ser ligada/desligada, o vmid pode ser obtito no script que lista as VMs"
      ```sh
-    python3 poweroff_vm.py
+    python3 power_on_off_vm.py
     ```
