@@ -1,5 +1,6 @@
 import list_vms
 import power_on_off_vm
+import update_cpu
  
 # Listando as VM
 '''
@@ -9,6 +10,15 @@ for vm in vms:
 '''
 
 # Ligando/Desligando VM
-vmid = 'vm-7896'
+'''
 vm_power = 'off'
+vmid = 'vm-7896'
 power_on_off_vm.power_on_off(vmid,vm_power)
+'''
+
+# Alterando quantidade CPU da VM
+'''
+vmid = 'vm-7896'
+cpu = 3
+update_cpu.update_cpu(vmid, cpu)
+'''
