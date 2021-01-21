@@ -12,11 +12,7 @@
     ```sh
     pip install requirements.txt
     ```
-    - Execute o script para listar as VMs
+    - Para executar os scripts remova os ''' para a função que for utilizar no arquivo main.py depois chame o script
     ```sh
-    python3 list_vms.py
-    ```
-    - Execute o script para Desligar ou Ligar a VM. "OBS: Deve-se alterar a variável "vmid" para qual VM vai ser ligada/desligada, o vmid pode ser obtito no script que lista as VMs"
-     ```sh
-    python3 power_on_off_vm.py
+    python3 main.py
     ```
