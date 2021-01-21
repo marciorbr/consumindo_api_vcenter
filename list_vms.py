@@ -4,7 +4,8 @@ import auth_vcenter
 
 api_host = os.getenv('VCENTER_SERVER')  # Puxando das variáveis de ambiente
 
-def list_vm (token):
+def list_vm ():
+    token = auth_vcenter.login_api_vmware() # Chamando a function e pegando o token de sessão
     url = f'https://{api_host}/rest/vcenter/vm'
     # Passando o token de sessão como parametro no header
     headers = {
@@ -27,9 +28,3 @@ def list_vm (token):
         return vms
     else:
         print(f'Erro na requisição')
-
-token = auth_vcenter.login_api_vmware() # Chamando a function e pegando o token de sessão 
-vms = list_vm(token) # Chamando a function e passando o token pego acima 
-# Listando as VM 
-for vm in vms:
-    print(vm)
